@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -34,7 +35,7 @@ public class PlantDataController {
         {
             return productionRunRepository.findByIdFromAndTo(lineId, from, to);
         }
-        return productionRunRepository.findByLineId(lineId).orElse(null);
+        return productionRunRepository.findByLineId(lineId).orElse(Collections.emptyList());
     }
 
     @GetMapping("/production/run/{run_id}/downtime")
