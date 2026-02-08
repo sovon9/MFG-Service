@@ -9,7 +9,6 @@ import java.time.LocalDateTime;
 public class Shift {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
     @Column

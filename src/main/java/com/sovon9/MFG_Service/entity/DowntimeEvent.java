@@ -9,15 +9,14 @@ import java.time.LocalDateTime;
 public class DowntimeEvent {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
     @Column(name = "run_id")
     private String runId;
-    @Column(name = "lineId")
-    private String line_id;
-    @Column(name = "machineId")
-    private String machine_id;
+    @Column(name = "line_id")
+    private String lineId;
+    @Column(name = "machine_id")
+    private String machineId;
     @Column
     private String reason;
     @Column
@@ -45,20 +44,20 @@ public class DowntimeEvent {
         this.runId = runId;
     }
 
-    public String getLine_id() {
-        return line_id;
+    public String getLineId() {
+        return lineId;
     }
 
-    public void setLine_id(String line_id) {
-        this.line_id = line_id;
+    public void setLineId(String lineId) {
+        this.lineId = lineId;
     }
 
-    public String getMachine_id() {
-        return machine_id;
+    public String getMachineId() {
+        return machineId;
     }
 
-    public void setMachine_id(String machine_id) {
-        this.machine_id = machine_id;
+    public void setMachineId(String machineId) {
+        this.machineId = machineId;
     }
 
     public String getReason() {

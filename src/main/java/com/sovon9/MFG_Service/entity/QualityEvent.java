@@ -7,7 +7,6 @@ import jakarta.persistence.*;
 public class QualityEvent {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
     @Column(name = "run_id")

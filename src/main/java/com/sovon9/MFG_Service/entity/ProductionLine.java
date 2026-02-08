@@ -7,7 +7,6 @@ import jakarta.persistence.*;
 public class ProductionLine {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
     @Column
     private String plant_id;

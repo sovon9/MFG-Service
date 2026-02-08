@@ -10,7 +10,6 @@ import java.time.LocalDateTime;
 public class ProductionRun {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
     @Column(name = "line_id")
